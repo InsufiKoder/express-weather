@@ -1,0 +1,39 @@
+body {
+  padding: 50px;
+  font-size: 16px;
+  background-color: #222831;
+  color: #DDDDDD;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+}
+#inputCity{
+  color: #F05454;
+}
+.btn{
+  background-color: #30475E;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn:hover{
+  background-color: #DDDDDD;
+  color: #F05454;
+}
+#weather{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
