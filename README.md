@@ -7,6 +7,9 @@ Express.js kullanılarak oluşturulmuş, gerçek zamanlı bir chat app ve hava d
 npm i
 ```
 2. openweather API tokeninizi .env.example dosyasına ekleyip sonundaki .example uzantısını kaldırıp sadece .env olarak bırakın.
-3. npm start ile websitesini aktif hale getirin.
+3. websitesini aktif hale getirin.
+```
+npm start
+```
    
 websitesine localhost:3000 adresinden ulaşabilirsiniz.
