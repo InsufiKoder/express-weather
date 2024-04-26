@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Anasayfa</a>
+          <a class="nav-item nav-link" href="/weather">Hava Durumu</a>
+          <a class="nav-item nav-link" href="/chat">Chat</a>
+          <a class="nav-item nav-link" href="/about">Hakkında</a>
+        </div>
+      </div>
+    </nav>
+    <h1 class="poppins-bold"><%= welcomeText %></h1>
+    <h2 class="poppins-regular">Yukarıdaki menüden gitmek istediğiniz sayfayı seçebilirsiniz.</h2>   
+    
+  </body>
+  <script type="text/javascript" src="/javascripts/bootstrap.bundle.min.js"></script>
+</html>

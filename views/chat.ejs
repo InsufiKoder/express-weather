@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/chat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body onload="retrieveNick()">
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/index">Anasayfa</a>
+          <a class="nav-item nav-link" href="/weather">Hava Durumu</a>
+          <a class="nav-item nav-link active" href="#">Chat</a>
+          <a class="nav-item nav-link" href="/about">Hakkında</a>
+        </div>
+      </div>
+    </nav>
+    <div id="messages"></div>
+      <div class="container text-center fixed-bottom">
+        <div class="row align-items-center">
+          <form id="form" action="" class="row g-3 align-items-center">
+          <div class="col-2">
+            <div class="form-floating">
+                <input type="text" id="inputUsername" class="form-control" placeholder="Isim:" autocomplete="off" required>
+                <label for="inputUsername">Isim:</label>
+              </div>
+          </div>
+          <div class="col">
+            <div class="form-floating">
+                <input type="text" id="input" class="form-control" placeholder="Mesaj:" autocomplete="off" required>
+                <label for="input">Mesaj:</label>
+              </div>
+          </div>
+          <div class="col-auto">
+            <button class="btn btn-lg btn-block">Gönder</button>
+          </div>
+          </form>
+        </div>
+      </div>
+  </body>
+  <script type="text/javascript" src="/javascripts/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/javascripts/socket.io.js"></script>
+  <script type="text/javascript" src="/javascripts/chat.js"></script>
+</html>
